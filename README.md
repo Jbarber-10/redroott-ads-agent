@@ -18,16 +18,32 @@ Ignacio publica manualmente desde Meta Ads Manager
 
 ## Estructura del repo
 
+### Agentes (los 4 roles del sistema)
 | Archivo | Propósito |
 |---|---|
-| `00_INDICE_REDROOTT.md` | Mapa de qué archivo leer para qué tarea |
-| `RULES_META.md` | Reglas de decisión (CPA, ROAS, tiers, escalado/kill) |
 | `AGENTE_1_ANALISTA_META.md` | Lee Meta, decide pausar/escalar/variar (full auto + 4 candados) |
 | `AGENTE_2_ESTRATEGA.md` | Genera briefs ultra-específicos para variaciones |
 | `AGENTE_3_CREATIVO.md` | Produce assets vía Higgsfield (Nano Banana 2 / Kling 3.0) |
 | `AGENTE_4_EJECUTOR.md` | Sube ads como borradores PAUSED a Meta |
-| `ROUTINES_SETUP.md` | Cómo programar las 4 Routines en claude.ai |
-| `refs/` | Fotos de referencia obligatorias (cap oficial, interior LEDs, uso real) |
+
+### Reglas y estrategia
+| Archivo | Propósito |
+|---|---|
+| `00_INDICE_REDROOTT.md` | Mapa de qué archivo leer para qué tarea |
+| `RULES_META.md` | Reglas básicas de decisión (CPA, ROAS, tiers, escalado/kill) con números reales Redroott |
+| `SCALING_PLAYBOOK.md` | Cuándo subir budget, cuántos ads/semana, vertical vs horizontal, wave surfing |
+| `DIAGNOSIS_TREE.md` | 10 árboles de diagnóstico para problemas (CPA sube, ROAS baja, ad muere, etc) |
+| `CREATIVE_TESTING.md` | M4 method, mezcla 70/30, anatomía de test bien armado, postmortems |
+| `HISTORIAL_DECISIONES.md` | Memoria del agente: decisiones pasadas + postmortems + aprendizajes |
+| `ROUTINES_SETUP.md` | Cómo programar las Routines en claude.ai |
+
+### Assets
+| Carpeta | Contenido |
+|---|---|
+| `refs/cap/` | Foto oficial del producto (cap 3/4 con LEDs) |
+| `refs/cap-internals/` | Interior LEDs en patrón + vista exploded |
+| `refs/cap-real-use/` | Foto real del producto en uso (no IA) |
+| `refs/style-anchors/` | Estáticos ganadores actuales para imitar estilo (a poblar) |
 
 ## Datos clave Redroott
 

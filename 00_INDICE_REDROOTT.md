@@ -37,10 +37,12 @@ Este documento le dice al agente QUÉ archivo leer para QUÉ pregunta. Es el pri
 5. `personajes UGC/` ← banco de personajes aprobados (cada uno tiene su prompt)
 
 ### Si necesitas decidir qué pausar / escalar / variar en Meta
-1. `Agente Ads/RULES_META.md` ← reglas de decisión con tus números reales (FUENTE PRIMARIA)
-2. `Meta_Ads_Deep_Class_Redroott.pdf` ← Playbook completo (Parte 1 universal + Parte 2 Redroott)
-3. `Redroott_CPA_Analysis.pdf` ← análisis de CPA con economía completa
-4. `UGC Script Framework/10_TESTING_Y_SCALING.md` ← framework de testing/scaling
+1. `RULES_META.md` ← reglas de decisión con tus números reales (FUENTE PRIMARIA)
+2. `SCALING_PLAYBOOK.md` ← cuándo subir budget, cuántos ads por semana, escalado vertical/horizontal, wave surfing (DESTILADO de Nick Theriot, Davie Fogarty, Charlie Lawrance, Sam Piliero)
+3. `DIAGNOSIS_TREE.md` ← árbol de decisión para 10 escenarios de problema (CPA subiendo, ROAS bajando, ad ganador muriendo, etc)
+4. `CREATIVE_TESTING.md` ← M4 method, mezcla 70/30, postmortems, anatomía de tests bien armados
+5. `Meta_Ads_Deep_Class_Redroott.pdf` (opcional) ← playbook completo Mark Builds Brands (referencia profunda)
+6. `HISTORIAL_DECISIONES.md` ← registro de decisiones pasadas + postmortems de tests (memoria del agente)
 
 ### Si necesitas generar un personaje UGC nuevo o un diario de progreso completo
 1. `Descargas Redroott/SISTEMA_REDROOTT_DOCUMENTO_MAESTRO.md` ← Sistema completo de 9 fotos + 5 videos del diario 120 días (prompts exactos, modelo, aspect ratio, orden de referencias)
