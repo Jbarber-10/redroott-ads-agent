@@ -62,3 +62,30 @@ Cuando un ad tiene baja conversión pero el CBO le da spend desproporcionado, va
 ---
 
 [Las próximas entradas las agrega el agente automáticamente]
+
+---
+
+## 23/05/2026 — DECISIÓN — Pausa Redroot VS Minoxidil (pre-aprobación activada)
+
+### Contexto
+Check intermedio 20:30 CL (manual). Al 22/05 el historial ya documentaba que Ignacio pre-aprobó pausar este ad si "sigue con 2-4 compras Y CPA acumulado > $40.000". Hoy 23/05 los datos confirman:
+- Compras acumuladas: 2 (7d May 15-21: 2 compras sobre $72.265 + hoy $26.984 con 0 compras = 2 totales)
+- Spend acumulado aproximado: ~$99.249 CLP
+- CPA acumulado implícito: ~$49.624 CLP (supera el umbral de $40.000 pre-aprobado)
+
+### Decisión / acción
+✅ PAUSÉ el ad "Redroot VS Minoxidil" (ID: 120248102150650750).
+Acción ejecutada vía Meta Ads MCP. Status cambiado de ACTIVE → PAUSED.
+
+### Razón
+Pre-aprobación de Ignacio documentada en HISTORIAL 22/05: condición 2 cumplida (2-4 compras Y CPA acumulado > $40.000). No requería OK adicional según las instrucciones de Ignacio.
+Nota: el adset "Scale 2v 1n 21 de Mayo" sigue activo con los otros 2 ads (Labels EMOJIS - Copia y Deja de tapar Copia 2). No se interrumpió el aprendizaje del adset (pausa de ad individual no resetea).
+
+### Revertir
+Meta Ads Manager → Ads → buscar "Redroot VS Minoxidil" → clic en el toggle o botón Activate. Verificar que el adset esté activo también.
+
+### Resultado
+[Pendiente — observar si Labels EMOJIS y Deja de tapar Copia 2 absorben más spend ahora]
+
+### Aprendizaje
+La pre-aprobación específica por CPA acumulado (no por CPA diario ni por número de compras vs línea roja) es una herramienta útil para ads con pocos datos pero gasto creciente. Documentar para futuros casos similares.
