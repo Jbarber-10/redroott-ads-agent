@@ -54,10 +54,71 @@ Ignacio decide esperar 24h más antes de pausar. Pre-aprobación dada para el pr
 Ignacio quiere darle 1 día más al ad porque el CBO le estaba asignando 30% del budget (señal de que Meta detecta receptividad de audiencia). Posibilidad de que la siguiente data confirme rentabilidad.
 
 ### Resultado
-[Pendiente — completar en reporte de mañana 23/05]
+Confirmado 23/05: El ad "Redroot VS Minoxidil" aparece PAUSED en Meta al revisar el 23/05. El 22/05 gastó $27.020 adicionales con 0 compras nuevas. Gasto acumulado total estimado ~$126K con 2 compras (CPA acumulado ~$63K). Condición pre-aprobación #2 cumplida: sigue con 2-4 compras Y CPA acumulado > $40.000. Pausa correcta.
 
 ### Aprendizaje
-Cuando un ad tiene baja conversión pero el CBO le da spend desproporcionado, vale la pena darle 1 día más antes de pausar. Documentar el experimento para futuros casos similares.
+Cuando un ad tiene baja conversión pero el CBO le da spend desproporcionado, vale la pena darle 1 día más antes de pausar. En este caso el experimento confirmó que el extra gasto no generó conversiones. El concepto "VS Minoxidil" puede ser válido pero necesita un hook diferente y menor presupuesto inicial.
+
+---
+
+## 23/05/2026 — DECISIÓN — Pausa "Labels beneficios gorro EMOJIS - Copia" (adset Scale 2v 1n 21 de Mayo)
+
+### Contexto
+Ad "Labels beneficios gorro EMOJIS - Copia" (ID 120248102435420750, adset Scale 2v 1n 21 de Mayo) acumuló $109.881 en gasto 7d con 4 compras (CPA 7d $27.470). El 22/05 tuvo un día especialmente malo: $77.834 gastados con solo 2 compras (CPA diario $38.917 — sobre la línea roja $32.296). Al 23/05 las 09:09 CL ya llevaba $24.958 de gasto con 0 compras nuevas, proyectando continuar la tendencia negativa. El adset está en learning phase (<50 conversiones acumuladas) pero eso no impide pausar el ad individual.
+
+### Decisión / acción
+Se pausó el ad ID 120248102435420750 vía MCP Meta Ads a las 09:09 CL del 23/05. Pausa ejecutada automáticamente (dentro de candados).
+
+### Razón
+SCALING_PLAYBOOK.md sección 9: "Ad con CPA > $32K, 2-4 compras, gasto > $50K → PAUSAR". Los tres criterios se cumplen:
+- CPA ayer: $38.917 (> $32.296) ✓
+- Gasto 7d: $109.881 (> $50K) ✓
+- Compras 7d: 4 (rango 2-4) ✓
+- Candado 1: primera pausa del día (1/3). Candado 2: se pausó el AD, no el adset → no resetea aprendizaje.
+
+### Resultado
+[Pendiente — evaluar en el check de las 13:00 si el adset Scale 2v 1n 21 de Mayo mejora sin ese ad]
+
+### Aprendizaje
+"Labels EMOJIS - Copia" en un adset nuevo es un concepto válido, pero el 22/05 el CBO le asignó demasiado spend sin que el ad tuviera historial suficiente para convertir bien. El adset nuevo (Scale 2v 1n 21 de Mayo) tiene ahora solo "Deja de tapar Copia 2" activo, lo que puede liberar budget para que meta lo redistribuya mejor o para que el adset "muera" de forma natural.
+
+---
+
+## 23/05/2026 — APRENDIZAJE — Discrepancia leve Meta vs Klaviyo (22/05)
+
+### Contexto
+Cruce Meta vs Klaviyo para 22/05: Meta reportó 6 compras, Klaviyo reportó 5 "Placed Orders" (revenue Klaviyo: $524.910 CLP). Delta: 16.7% (sobre el umbral de 15%).
+
+### Decisión / acción
+No se activó modo degradado. Causa identificada: 1 orden de cliente invitado (guest checkout) sin email tracking → no capturado por Klaviyo. Diagnóstico validado por cruce con notificaciones de Shopify (6 emails de pedidos #1110–#1115 en el inbox).
+
+### Razón
+DIAGNOSIS_TREE.md Árbol 9: "1 día aislado → Ruido. Ignorar." La discrepancia es de 1 orden y tiene explicación clara.
+
+### Resultado
+Mañana 24/05 re-chequear si la discrepancia se repite. Si vuelve a aparecer por 3 días seguidos → modo degradado.
+
+### Aprendizaje
+El proxy Klaviyo tiene un sesgo sistemático bajo por guest checkouts. Un delta de 1 orden/día es normal y no debe activar modo degradado. Solo si es 2+ órdenes por 3 días se escala.
+
+---
+
+## 23/05/2026 — APRENDIZAJE — Nuevo adset "Scale 23 de Mayo" detectado
+
+### Contexto
+Al hacer el snapshot de cuenta del 23/05 se detectó un adset nuevo "Scale 23 de Mayo" (ID 120248273573790750) que no estaba en el snapshot guardado del 21/05. Tiene 3 ads: 2× "Labels beneficios gorro EMOJIS - Copia" + 1× "Deja de tapar las entradas distinta foto - Copia 2". El adset parece haber sido creado por Ignacio esta misma mañana del 23/05.
+
+### Decisión / acción
+Registrado como cambio estructural detectado. Ads en aprendizaje (< 50 conversiones). No se toca el adset (candado 2). Se monitorea en próximos checks.
+
+### Razón
+AGENTE_1_ANALISTA_META.md: "Si hay diferencias significativas, REPÓRTALAS al principio del reporte."
+
+### Resultado
+[Pendiente — evaluar desempeño en 72h]
+
+### Aprendizaje
+Cuando Ignacio agrega adsets sin avisar, el agente los detecta en el snapshot del primer run del día. Agregar al contexto del reporte como "cambios detectados desde último snapshot."
 
 ---
 
